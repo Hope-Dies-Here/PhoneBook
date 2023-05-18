@@ -2,7 +2,7 @@ body{
  display: flex;
  align-items: center;
  justify-content: center;
- border: 1px solid red;
+ height: 100vh;
 }
 #container{
   max-width: 80%;
