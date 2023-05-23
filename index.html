@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="./style.css" >
   </head>
   <body>
-    <div id="container">
-      
+    <main>
+      <div id="container">
       <div id="save-cont">
         <h2> Phone Book </h2>
         <div>
@@ -14,14 +14,24 @@
         <div>
           Phone: <input id="phone" type = "number">
         </div>
-        <button id ="save"> Save </button>
+        <button id ="save" class="btn-blue"> Save </button>
       </div>
-      <div id="display">
+      <div id="contactHeader">
         <h2>
           Contacts
         </h2>
+        <div id="sortContainer">
+          <select id="sortMethod">
+            <option>Ass</option>
+            <option>Dec</option>
+          </select>
+          <button id="sortBtn" class="btn-blue">Sort</button>
+        </div>
+        
+      </div>
+      <div id="display">
         <ul id="ul">
-          <li>
+           <li>
             Poclie <br> <sub>0909090809</sub>
           </li>
           <li>
@@ -29,10 +39,11 @@
           </li>
           <li>
             Greagor <br> <sub>0961169119</sub>
-          </li>
+          </li> 
         </ul>
       </div>
     </div>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>

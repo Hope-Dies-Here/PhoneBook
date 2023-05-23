@@ -1,11 +1,56 @@
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 body{
  display: flex;
  align-items: center;
  justify-content: center;
  min-height: 100vh;
 }
+
+main{
+  width: min(70ch, 100% - 1rem);
+  margin-inline: auto;
+}
+
+
+#btn{
+  width: 100px;
+  margin: auto;
+  padding: 5px 20px;
+  color: ;
+  background-color: none;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+#html{
+  transition: 1s;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+main{
+  width: min(70ch, 100% - 1rem);
+  margin-inline: auto;
+}
+
+em{
+  text-align: right;
+  padding-right: 25px;
+}
+
+/*Phone Book */
+
 #container{
   max-width: 80%;
+  
+  margin-inline: auto;
 }
 #save-cont{
   color: steelblue;
@@ -22,7 +67,7 @@ body{
   text-align: center;
 }
 
-button{
+.btn-blue{
   width: fit-content;
   background-color: steelblue;
   border: none;
@@ -31,12 +76,17 @@ button{
   border-radius: 4px;
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 #display li{
   border: 1px solid gray;
   margin: .6em;
   padding: .35rem 1rem;
   border-radius: 2px;
   color: steelblue;
+  overflow-wrap: break-word;
 }
 ul{
   list-style: none;
@@ -45,4 +95,49 @@ ul{
 #display li sub{
  
   margin-left: .3em
+}
+
+#contactHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sortContainer{
+  /* border: 1px solid red; */
+}
+#sortMethod{
+  padding: .15em .25em;
+  border-radius: 2px;
+  color: white;
+  background-color: teal;
+}
+
+@media (min-width: 800px){
+  #ul{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+}
+
+#contactDetail{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#call{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: steelblue;
+  padding: .8em;
+  border-radius: 50%;
+  font-size: .6em;
+}
+
+select {
+  border: 1px solid teal;
+  
 }
